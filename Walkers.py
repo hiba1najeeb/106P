@@ -24,9 +24,7 @@ while True:
     # Extract bounding boxes for any bodies identified
     for (x,y,w,h) in bodies:
        cv2.rectangle(frame,(x,y),(x+w,y+h),(255,0,0),2)
-      
-             
-    cv2.imshow('frame',frame)
+       cv2.imshow('frame',frame)
     
 
     if cv2.waitKey(1) == 32:
